@@ -11,17 +11,23 @@ class HomePage extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             ListTile(
-                //key: ValueKey('unica 1'),
-                title: const Text('My first flutter app'),
+                title: const Text('Namer app'),
                 subtitle: const Text('codelab chapter #1'),
                 onTap: () => {
-                      //context.go('/labOne')
+                      context.go('/labOne'),
                     }),
             ListTile(
-                //key: ValueKey('unica 2'),
-                title: const Text('Registro - Paso #1'),
-                subtitle: const Text('Conoce - Alfa'),
-                onTap: () => {}),
+              title: const Text('lab #2'),
+              subtitle: const Text('Cambia fondo #2'),
+              onTap: () => {
+                context.go('/labTwo'),
+              },
+            ),
+            ListTile(
+              title: const Text('lab #3'),
+              subtitle: const Text('Cambia fondo #3'),
+              onTap: () => {context.go('/labThree')},
+            ),
           ],
         ),
       ),

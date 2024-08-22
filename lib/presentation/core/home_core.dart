@@ -10,7 +10,9 @@ class HomeCore extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           useMaterial3: true,
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange)),
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: Colors.deepOrange,
+          )),
       routerConfig: routerCore,
     );
   }
