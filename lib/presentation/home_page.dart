@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
           children: <Widget>[
             ListTile(
                 title: const Text('Namer app'),
-                subtitle: const Text('codelab chapter #1'),
+                subtitle: const Text('codelab #1'),
                 onTap: () => {
                       context.go('/labOne'),
                     }),
